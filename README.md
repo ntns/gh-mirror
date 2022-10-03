@@ -4,7 +4,7 @@ Tool to mirror Github repositories locally
 # use cases
 Keeping a local backup of Github repositories
 
-# instalation
+# installation
 `go install github.com/ntns/gh-mirror`
 
 # usage
