@@ -16,3 +16,12 @@ $ gh-mirror                      # mirror and update repos
 ```
 
 You can use gh-mirror from any directory. Repos will always be saved at ~/gh-mirror/username/repo.
+
+# how it works
+New repositories are cloned using `git clone --mirror`
+
+Existing repositories are kept up to date using `git remote update`
+
+That's it!
+
+
