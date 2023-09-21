@@ -16,6 +16,8 @@ func TestValidRepoPath(t *testing.T) {
 		{"ntns/gh-mirror-0", true},
 		{"ntns/gh!mirror", false},
 		{"ntns!/gh-mirror", false},
+		{"ntns/gh_mirror", true},
+		{"ntns/gh.mirror", true},
 	}
 
 	for _, test := range tests {

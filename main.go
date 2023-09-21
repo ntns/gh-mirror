@@ -127,7 +127,7 @@ func notExistRepo(repo string) bool {
 	return os.IsNotExist(err)
 }
 
-var reValidRepoPath = regexp.MustCompile(`^[\w-]+/[\w-]+$`)
+var reValidRepoPath = regexp.MustCompile(`^[A-Za-z0-9-]+/[A-Za-z0-9\._-]+$`)
 
 func isValidRepoPath(repo string) bool {
 	return reValidRepoPath.MatchString(repo)
